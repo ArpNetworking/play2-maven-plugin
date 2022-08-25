@@ -131,7 +131,7 @@ under the License.
                             <link>https://docs.oracle.com/javase/8/docs/api/</link>
                         </links>
                         <sourcepath>${project.basedir}/src/main/java:${project.basedir}/../../play2-provider-api/src/main/java</sourcepath>
-                        <subpackages>com.arpnetworking.code.play2.provider.play28</subpackages>
+                        <subpackages>com.google.code.play2.provider.play28</subpackages>
                     </configuration>
                 </plugin>
 
