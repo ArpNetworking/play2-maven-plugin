@@ -43,7 +43,7 @@ a) by adding `runGoals` parameter to plugin configuration:
         <plugins>
             ....
             <plugin>
-                <groupId>com.google.code.play2-maven-plugin</groupId>
+                <groupId>com.arpnetworking.code.play2-maven-plugin</groupId>
                 <artifactId>play2-maven-plugin</artifactId>
                 <version>${project.version}</version>
                 <extensions>true</extensions>
@@ -91,7 +91,7 @@ a) by adding `mainModule` parameter to plugin configuration:
         <plugins>
             ....
             <plugin>
-                <groupId>com.google.code.play2-maven-plugin</groupId>
+                <groupId>com.arpnetworking.code.play2-maven-plugin</groupId>
                 <artifactId>play2-maven-plugin</artifactId>
                 <version>${project.version}</version>
                 <extensions>true</extensions>

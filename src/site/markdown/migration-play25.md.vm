@@ -64,7 +64,7 @@ d) default router generator type has changed from `static` to `injected`, add or
 
 ```
             <plugin>
-                <groupId>com.google.code.play2-maven-plugin</groupId>
+                <groupId>com.arpnetworking.code.play2-maven-plugin</groupId>
                 <artifactId>play2-maven-plugin</artifactId>
                 <version>${play2.plugin.version}</version>
                 <extensions>true</extensions>
@@ -80,7 +80,7 @@ d) default router generator type has changed from `static` to `injected`, add or
 
 ```
             <plugin>
-                <groupId>com.google.code.play2-maven-plugin</groupId>
+                <groupId>com.arpnetworking.code.play2-maven-plugin</groupId>
                 <artifactId>play2-maven-plugin</artifactId>
                 <version>${play2.plugin.version}</version>
                 <extensions>true</extensions>

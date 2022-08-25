@@ -37,28 +37,28 @@ under the License.
             <id>default</id>
             <phases>
               <generate-sources>
-                com.google.code.play2-maven-plugin:play2-maven-plugin:routes-compile,
-                com.google.code.play2-maven-plugin:play2-maven-plugin:template-compile
+                com.arpnetworking.code.play2-maven-plugin:play2-maven-plugin:routes-compile,
+                com.arpnetworking.code.play2-maven-plugin:play2-maven-plugin:template-compile
               </generate-sources>
               <!-- add in the project, if needed <generate-resources>
-                com.google.code.play2-maven-plugin:play2-maven-plugin:closure-compile,
-                com.google.code.play2-maven-plugin:play2-maven-plugin:coffee-compile,
-                com.google.code.play2-maven-plugin:play2-maven-plugin:less-compile
+                com.arpnetworking.code.play2-maven-plugin:play2-maven-plugin:closure-compile,
+                com.arpnetworking.code.play2-maven-plugin:play2-maven-plugin:coffee-compile,
+                com.arpnetworking.code.play2-maven-plugin:play2-maven-plugin:less-compile
               </generate-resources>-->
               <process-resources>
                 org.apache.maven.plugins:maven-resources-plugin:resources
               </process-resources>
               <compile>
-                com.google.code.sbt-compiler-maven-plugin:sbt-compiler-maven-plugin:compile
+                com.arpnetworking.code.sbt-compiler-maven-plugin:sbt-compiler-maven-plugin:compile
               </compile>
               <!-- add in the project, if needed <process-classes>
-                com.google.code.play2-maven-plugin:play2-maven-plugin:enhance
+                com.arpnetworking.code.play2-maven-plugin:play2-maven-plugin:enhance
               </process-classes> -->
               <process-test-resources>
                 org.apache.maven.plugins:maven-resources-plugin:testResources
               </process-test-resources>
               <test-compile>
-                com.google.code.sbt-compiler-maven-plugin:sbt-compiler-maven-plugin:testCompile
+                com.arpnetworking.code.sbt-compiler-maven-plugin:sbt-compiler-maven-plugin:testCompile
               </test-compile>
               <test>
                 org.apache.maven.plugins:maven-surefire-plugin:test

@@ -20,7 +20,7 @@ under the License.
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
     <parent>
-        <groupId>com.google.code.play2-maven-plugin</groupId>
+        <groupId>com.arpnetworking.code.play2-maven-plugin</groupId>
         <artifactId>play2-providers</artifactId>
         <version>1.0.0-rc6-SNAPSHOT</version>
     </parent>
@@ -131,7 +131,7 @@ under the License.
                             <link>https://docs.oracle.com/javase/8/docs/api/</link>
                         </links>
                         <sourcepath>${project.basedir}/src/main/java:${project.basedir}/../../play2-provider-api/src/main/java</sourcepath>
-                        <subpackages>com.google.code.play2.provider.play28</subpackages>
+                        <subpackages>com.arpnetworking.code.play2.provider.play28</subpackages>
                     </configuration>
                 </plugin>
 

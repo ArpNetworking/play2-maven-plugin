@@ -73,7 +73,7 @@ Simplest project file:
 
         <plugins>
             <plugin>
-                <groupId>com.google.code.play2-maven-plugin</groupId>
+                <groupId>com.arpnetworking.code.play2-maven-plugin</groupId>
                 <artifactId>play2-maven-plugin</artifactId>
                 <version>${project.version}</version>
                 <extensions>true</extensions>
@@ -202,7 +202,7 @@ Example with optional dependencies and configuration options:
 
         <plugins>
             <plugin>
-                <groupId>com.google.code.play2-maven-plugin</groupId>
+                <groupId>com.arpnetworking.code.play2-maven-plugin</groupId>
                 <artifactId>play2-maven-plugin</artifactId>
                 <version>${project.version}</version>
                 <extensions>true</extensions>

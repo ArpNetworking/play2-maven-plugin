@@ -37,7 +37,7 @@ Add `playVersion` parameter with value starting with `2.1.` to plugin configurat
         <plugins>
             ...
             <plugin>
-                <groupId>com.google.code.play2-maven-plugin</groupId>
+                <groupId>com.arpnetworking.code.play2-maven-plugin</groupId>
                 <artifactId>play2-maven-plugin</artifactId>
                 <version>${project.version}</version>
                 <extensions>true</extensions>

@@ -81,7 +81,7 @@ and optionally configure additional template imports
 
 ```
             <plugin>
-                <groupId>com.google.code.play2-maven-plugin</groupId>
+                <groupId>com.arpnetworking.code.play2-maven-plugin</groupId>
                 <artifactId>play2-maven-plugin</artifactId>
                 <version>${play2.plugin.version}</version>
                 <extensions>true</extensions>
