@@ -37,7 +37,7 @@ under the License.
     <url>https://play2-maven-plugin.github.io/play2-maven-plugin/${project.version}/</url>
 
     <scm>
-        <connection>scm:git:git://github.com/play2-maven-plugin/play2-maven-plugin.git</connection>
+        <connection>scm:git:git://github.com/arpnetworking/play2-maven-plugin.git</connection>
         <developerConnection>scm:git:git@github.com:play2-maven-plugin/play2-maven-plugin.git</developerConnection>
         <url>https://github.com/play2-maven-plugin/play2-maven-plugin/tree/${project.scm.tag}</url>
         <tag>HEAD</tag>
