@@ -71,7 +71,7 @@ public abstract class AbstractPlay2EnhanceMojo
     @Parameter( property = "plugin.artifacts", required = true, readonly = true )
     private List<Artifact> pluginArtifacts;
 
-    private static final String SBT_COMPILER_PLUGIN_GROUP_ID = "com.google.code.sbt-compiler-maven-plugin";
+    private static final String SBT_COMPILER_PLUGIN_GROUP_ID = "com.arpnetworking.code.sbt-compiler-maven-plugin";
 
     private static final String SBT_COMPILER_PLUGIN_API_ARTIFACT_ID = "sbt-compiler-api";
 

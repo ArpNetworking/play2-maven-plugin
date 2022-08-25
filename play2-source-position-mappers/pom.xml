@@ -34,7 +34,7 @@ under the License.
 
     <dependencies>
         <dependency>
-            <groupId>com.google.code.sbt-compiler-maven-plugin</groupId>
+            <groupId>com.arpnetworking.code.sbt-compiler-maven-plugin</groupId>
             <artifactId>sbt-compiler-api</artifactId>
             <version>${sbt-compiler.plugin.version}</version>
             <scope>provided</scope>
