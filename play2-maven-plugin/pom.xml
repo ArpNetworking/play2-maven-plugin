@@ -38,10 +38,10 @@ under the License.
 
     <properties>
         <ant.version>1.9.4</ant.version>
-        <maven.version>3.1.0</maven.version>
-        <maven-plugin-plugin.version>3.5.2</maven-plugin-plugin.version>
-        <plexus-archiver.version>3.6.0</plexus-archiver.version>
-        <plexus-utils.version>3.1.0</plexus-utils.version>
+        <maven.version>3.9.6</maven.version>
+        <maven-plugin-plugin.version>3.10.2</maven-plugin-plugin.version>
+        <plexus-archiver.version>4.9.1</plexus-archiver.version>
+        <plexus-utils.version>4.0.0</plexus-utils.version>
     </properties>
 
     <dependencies>
@@ -249,9 +249,9 @@ under the License.
         </dependency>
 
         <dependency>
-            <groupId>org.sonatype.plexus</groupId>
+            <groupId>org.codehaus.plexus</groupId>
             <artifactId>plexus-build-api</artifactId>
-            <version>0.0.7</version>
+            <version>1.2.0</version>
         </dependency>
     </dependencies>
 

@@ -26,11 +26,11 @@ under the License.
     </parent>
 
     <modelVersion>4.0.0</modelVersion>
-    <artifactId>play2-source-watcher-jdk7</artifactId>
+    <artifactId>play2-source-watcher-jdk8</artifactId>
     <packaging>jar</packaging>
 
-    <name>Play! 2.x Source Watcher JDK7</name>
-    <description>Play! 2.x Source Watcher JDK7</description>
+    <name>Play! 2.x Source Watcher JDK8</name>
+    <description>Play! 2.x Source Watcher JDK8</description>
 
     <build>
         <pluginManagement>
@@ -39,8 +39,8 @@ under the License.
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-compiler-plugin</artifactId>
                     <configuration>
-                        <source>1.7</source>
-                        <target>1.7</target>
+                        <source>1.8</source>
+                        <target>1.8</target>
                     </configuration>
                 </plugin>
 
@@ -48,9 +48,9 @@ under the License.
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-javadoc-plugin</artifactId>
                     <configuration>
-                        <source>1.7</source>
+                        <source>1.8</source>
                         <links>
-                            <link>http://docs.oracle.com/javase/7/docs/api/</link>
+                            <link>http://docs.oracle.com/javase/8/docs/api/</link>
                         </links>
                         <sourcepath>${project.basedir}/src/main/java:${project.basedir}/../../play2-source-watcher-api/src/main/java</sourcepath>
                         <subpackages>com.google.code.play2.watcher.jdk7</subpackages>
@@ -61,7 +61,7 @@ under the License.
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-pmd-plugin</artifactId>
                     <configuration>
-                        <targetJdk>1.7</targetJdk>
+                        <targetJdk>1.8</targetJdk>
                     </configuration>
                 </plugin>
 
@@ -71,7 +71,7 @@ under the License.
                     <configuration>
                         <signature>
                             <groupId>org.codehaus.mojo.signature</groupId>
-                            <artifactId>java17</artifactId>
+                            <artifactId>java18</artifactId>
                             <version>1.0</version>
                         </signature>
                     </configuration>
@@ -89,8 +89,8 @@ under the License.
                         <configuration>
                             <rules>
                                 <requireJavaVersion>
-                                    <version>1.7</version>
-                                    <message>Java 1.7 or later required.</message>
+                                    <version>1.8</version>
+                                    <message>Java 1.8 or later required.</message>
                                 </requireJavaVersion>
                             </rules>
                         </configuration>
@@ -111,9 +111,9 @@ under the License.
                         <groupId>org.apache.maven.plugins</groupId>
                         <artifactId>maven-javadoc-plugin</artifactId>
                         <configuration>
-                            <source>1.7</source>
+                            <source>1.8</source>
                             <links>
-                                <link>http://docs.oracle.com/javase/7/docs/api/</link>
+                                <link>http://docs.oracle.com/javase/8/docs/api/</link>
                             </links>
                         </configuration>
                     </plugin>
@@ -130,7 +130,7 @@ under the License.
                         <groupId>org.apache.maven.plugins</groupId>
                         <artifactId>maven-javadoc-plugin</artifactId>
                         <configuration>
-                            <source>1.7</source>
+                            <source>1.8</source>
                             <links>
                                 <link>http://docs.oracle.com/javase/7/docs/api/</link>
                             </links>
@@ -141,7 +141,7 @@ under the License.
                         <groupId>org.apache.maven.plugins</groupId>
                         <artifactId>maven-pmd-plugin</artifactId>
                         <configuration>
-                            <targetJdk>1.7</targetJdk>
+                            <targetJdk>1.8</targetJdk>
                         </configuration>
                     </plugin>
                 </plugins>

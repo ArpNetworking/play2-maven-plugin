@@ -43,11 +43,6 @@ under the License.
         <tag>HEAD</tag>
     </scm>
 
-    <ciManagement>
-        <system>Travis CI</system>
-        <url>https://travis-ci.org/play2-maven-plugin/play2-maven-plugin</url>
-    </ciManagement>
-
     <issueManagement>
         <system>GitHub Issues</system>
         <url>https://github.com/play2-maven-plugin/play2-maven-plugin/issues/</url>
@@ -62,6 +57,15 @@ under the License.
                 <role>Developer</role>
             </roles>
             <timezone>+1</timezone>
+        </developer>
+        <developer>
+            <id>brandonarp</id>
+            <name>Brandon Arp</name>
+            <email>brandonarp@gmail.com</email>
+            <roles>
+                <role>Developer</role>
+            </roles>
+            <timezone>-8</timezone>
         </developer>
     </developers>
 
@@ -126,8 +130,8 @@ under the License.
                     <artifactId>maven-compiler-plugin</artifactId>
                     <version>3.7.0</version>
                     <configuration>
-                        <source>1.6</source>
-                        <target>1.6</target>
+                        <source>1.8</source>
+                        <target>1.8</target>
                     </configuration>
                 </plugin>
 
@@ -217,7 +221,7 @@ under the License.
                     <artifactId>maven-pmd-plugin</artifactId>
                     <version>3.9.0</version>
                     <configuration>
-                        <targetJdk>1.6</targetJdk>
+                        <targetJdk>1.8</targetJdk>
                     </configuration>
                 </plugin>
 
@@ -262,15 +266,17 @@ under the License.
                             <sbt013LatestVersion>0.13.15</sbt013LatestVersion>
                             <scala210LatestVersion>2.10.7</scala210LatestVersion>
                             <scala211LatestVersion>2.11.12</scala211LatestVersion>
-                            <scala212LatestVersion>2.12.10</scala212LatestVersion>
+                            <scala212LatestVersion>2.12.18</scala212LatestVersion>
+                            <scala213LatestVersion>2.13.12</scala213LatestVersion>
                             <play21LatestVersion>2.1.5</play21LatestVersion>
                             <play22LatestVersion>2.2.6</play22LatestVersion>
                             <play23LatestVersion>2.3.10</play23LatestVersion>
                             <play24LatestVersion>2.4.11</play24LatestVersion>
                             <play25LatestVersion>2.5.19</play25LatestVersion>
-                            <play26LatestVersion>2.6.21</play26LatestVersion>
-                            <play27LatestVersion>2.7.4</play27LatestVersion>
-                            <play28LatestVersion>2.8.16</play28LatestVersion>
+                            <play26LatestVersion>2.6.25</play26LatestVersion>
+                            <play27LatestVersion>2.7.9</play27LatestVersion>
+                            <play28LatestVersion>2.8.21</play28LatestVersion>
+                            <play30LatestVersion>3.0.1</play30LatestVersion>
                             <play22WarLatestVersion>1.2.1</play22WarLatestVersion>
                             <play23WarLatestVersion>1.3-beta3</play23WarLatestVersion>
                             <play24WarLatestVersion>1.4.0</play24WarLatestVersion>
