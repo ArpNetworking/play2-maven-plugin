@@ -30,9 +30,9 @@ import com.google.code.play2.provider.api.Play2TemplateCompiler;
 import org.codehaus.plexus.component.annotations.Component;
 
 /**
- * Plugin provider for Play&#33; 2.7.x
+ * Plugin provider for Play&#33; 3.0.x
  */
-@Component( role = Play2Provider.class, hint = "play28", description = "Play! 2.7.x" )
+@Component( role = Play2Provider.class, hint = "play30", description = "Play! 3.0.x" )
 public class Play30Provider
     implements Play2Provider
 {
