@@ -32,19 +32,4 @@ under the License.
     <name>Play! 2.x Source Watcher Polling</name>
     <description>Play! 2.x Source Watcher Polling</description>
 
-    <build>
-        <pluginManagement>
-            <plugins>
-                <plugin>
-                    <groupId>org.apache.maven.plugins</groupId>
-                    <artifactId>maven-javadoc-plugin</artifactId>
-                    <configuration>
-                        <sourcepath>${project.basedir}/src/main/java:${project.basedir}/../../play2-source-watcher-api/src/main/java</sourcepath>
-                        <subpackages>com.google.code.play2.watcher.polling</subpackages>
-                    </configuration>
-                </plugin>
-            </plugins>
-        </pluginManagement>
-    </build>
-
 </project>
