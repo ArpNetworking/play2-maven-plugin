@@ -120,7 +120,7 @@ public class Play30TemplateCompiler
             String formatterType = formatterTypes[index];
             Seq<String> additionalImportsSeq = getAdditionalImports( ext );
             Seq<String> constructorAnnotationsSeq =
-                JavaConverters.asScalaBuffer( Arrays.asList( constructorAnnotations ) ).toSeq();
+                JavaConverters.asScala( Arrays.asList( constructorAnnotations ) ).toSeq();
             try
             {
                 Option<File> resultOption =
@@ -158,7 +158,7 @@ public class Play30TemplateCompiler
         {
             formattedAdditionalImports.add( additionalImport.replace( "%format%", format ) );
         }
-        return JavaConverters.asScalaBuffer( formattedAdditionalImports ).toSeq();
+        return JavaConverters.asScala( formattedAdditionalImports ).toSeq();
     }
 
 }

@@ -453,6 +453,7 @@ public class MavenPlay2Builder implements Play2Builder, FileWatchCallback
 
         MavenExecutionResult result = new DefaultMavenExecutionResult();
 
+        @SuppressWarnings("deprecation") // No idea what the replacement is here
         final MavenSession newSession = new MavenSession( container, session.getRepositorySession(), request, result );
         newSession.setProjects( projectsToBuild );
         newSession.setCurrentProject( session.getCurrentProject() );

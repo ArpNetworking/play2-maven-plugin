@@ -28,6 +28,7 @@ public class Play2BuildFailure
     extends Exception
 {
     private static final long serialVersionUID = 1L;
+    public static final int BUFFER_SIZE = 8192;
 
     private Play2BuildException e;
 
@@ -91,7 +92,7 @@ public class Play2BuildFailure
             {
                 result = readFileAsString();
             }
-            catch ( IOException e )
+            catch ( IOException ignored )
             {
                 // ignore
             }
@@ -113,7 +114,7 @@ public class Play2BuildFailure
         FileInputStream is = new FileInputStream( e.source() );
         try
         {
-            byte[] buffer = new byte[8192];
+            byte[] buffer = new byte[BUFFER_SIZE];
             int len = is.read( buffer );
             ByteArrayOutputStream out = new ByteArrayOutputStream();
             while ( len != -1 )

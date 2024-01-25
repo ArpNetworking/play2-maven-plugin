@@ -123,7 +123,7 @@ public class Play30RoutesCompiler
             RoutesCompiler.compile( routesCompilerTask, routesGenerator, outputDirectory );
         if ( result.isLeft() )
         {
-            RoutesCompilationError e = result.left().get().apply( 0 );
+            RoutesCompilationError e = result.left().toOption().get().apply( 0 );
             throw new RoutesCompilationException( e.source(), e.message(), (Integer) e.line().get(),
                                                   (Integer) e.column().get() );
         }

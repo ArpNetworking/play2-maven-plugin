@@ -33,7 +33,6 @@ under the License.
     <description>Play! 2.x Source Watchers</description>
 
     <modules>
-        <module>play2-source-watcher-jdk7</module>
         <module>play2-source-watcher-jnotify</module>
         <module>play2-source-watcher-polling</module>
     </modules>

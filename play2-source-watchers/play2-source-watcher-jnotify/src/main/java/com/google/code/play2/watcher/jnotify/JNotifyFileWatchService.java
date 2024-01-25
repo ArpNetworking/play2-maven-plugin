@@ -36,12 +36,11 @@ import com.google.code.play2.watcher.api.FileWatchService;
 import net.contentobjects.jnotify.JNotify;
 import net.contentobjects.jnotify.JNotifyException;
 
-import org.codehaus.plexus.component.annotations.Component;
-
 /**
  * JNotify file watch service.
  */
-@Component( role = FileWatchService.class, hint = "jnotify", description = "JNotify" )
+@SuppressWarnings("deprecation") // Component annotation is deprecated, but we need it for Plexus to work
+@org.codehaus.plexus.component.annotations.Component( role = FileWatchService.class, hint = "jnotify", description = "JNotify" )
 public class JNotifyFileWatchService
     extends AbstractFileWatchService
 {
