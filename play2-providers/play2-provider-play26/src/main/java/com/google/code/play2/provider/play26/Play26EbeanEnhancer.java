@@ -90,6 +90,7 @@ public class Play26EbeanEnhancer
         try
         {
             Class<?> configLoaderClass = classLoader.loadClass( configLoaderClassName );
+            @SuppressWarnings("unchecked") // Legacy code
             Function<ClassLoader, Map<String, List<String>>> configLoader =
                     ( Function<ClassLoader, Map<String, List<String>>> ) configLoaderClass.newInstance();
 

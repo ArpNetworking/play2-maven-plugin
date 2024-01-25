@@ -32,6 +32,7 @@ under the License.
     <name>Play! 2.x Source Position Mappers</name>
     <description>Play! 2.x Source Position Mappers</description>
 
+
     <dependencies>
         <dependency>
             <groupId>com.arpnetworking.code.sbt-compiler-maven-plugin</groupId>

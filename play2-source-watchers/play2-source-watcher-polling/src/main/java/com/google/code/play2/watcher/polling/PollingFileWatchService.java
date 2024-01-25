@@ -27,12 +27,11 @@ import com.google.code.play2.watcher.api.FileWatcher;
 import com.google.code.play2.watcher.api.FileWatchCallback;
 import com.google.code.play2.watcher.api.FileWatchService;
 
-import org.codehaus.plexus.component.annotations.Component;
-
 /**
  * Polling file watch service.
  */
-@Component( role = FileWatchService.class, hint = "polling", description = "Polling" )
+@SuppressWarnings("deprecation") // Component annotation is deprecated, but we need it for Plexus to work
+@org.codehaus.plexus.component.annotations.Component( role = FileWatchService.class, hint = "polling", description = "Polling" )
 public class PollingFileWatchService
     extends AbstractFileWatchService
 {

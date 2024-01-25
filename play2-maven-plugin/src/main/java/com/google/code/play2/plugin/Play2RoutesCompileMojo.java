@@ -61,6 +61,7 @@ public class Play2RoutesCompileMojo
      * 
      * @deprecated
      */
+    @Deprecated
     @Parameter( property = "play2.confDirectory", readonly = true )
     private File confDirectory;
 

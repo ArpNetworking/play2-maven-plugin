@@ -21,15 +21,10 @@ import java.io.File;
 import java.util.Arrays;
 import java.util.List;
 
+import play.routes.compiler.*;
 import scala.collection.JavaConversions;
 import scala.collection.Seq;
 import scala.util.Either;
-
-import play.routes.compiler.InjectedRoutesGenerator$;
-import play.routes.compiler.RoutesCompilationError;
-import play.routes.compiler.RoutesCompiler;
-import play.routes.compiler.RoutesGenerator;
-import play.routes.compiler.StaticRoutesGenerator$;
 
 import com.google.code.play2.provider.api.Play2RoutesCompiler;
 import com.google.code.play2.provider.api.RoutesCompilationException;
@@ -106,6 +101,7 @@ public class Play26RoutesCompiler
         this.additionalImports = additionalImports;
     }
 
+    @SuppressWarnings("deprecation") // Explicit api use
     @Override
     public void compile( File routesFile )
         throws RoutesCompilationException
@@ -113,7 +109,7 @@ public class Play26RoutesCompiler
         RoutesGenerator routesGenerator = InjectedRoutesGenerator$.MODULE$;
         if ( "static".equals( generator ) )
         {
-            routesGenerator = StaticRoutesGenerator$.MODULE$;
+            routesGenerator = play.routes.compiler.StaticRoutesGenerator$.MODULE$;
         }
         RoutesCompiler.RoutesCompilerTask routesCompilerTask =
             new RoutesCompiler.RoutesCompilerTask( routesFile, JavaConversions.asScalaBuffer( additionalImports ),
