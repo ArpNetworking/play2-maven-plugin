@@ -35,7 +35,7 @@ under the License.
     <properties>
         <play2.version>2.5.19</play2.version>
         <twirl.version>1.1.1</twirl.version>
-        <play2-enhancer.version>1.1.0</play2-enhancer.version>
+        <play2-enhancer.version>1.2.2</play2-enhancer.version>
     </properties>
 
     <dependencies>
