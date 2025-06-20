@@ -412,7 +412,7 @@ under the License.
                 <artifactId>maven-enforcer-plugin</artifactId>
                 <configuration>
                     <rules>
-                        <requireMavenVersion><version>3.9.6</version></requireMavenVersion>
+                        <requireMavenVersion><version>3.9.10</version></requireMavenVersion>
                     </rules>
                 </configuration>
             </plugin>
