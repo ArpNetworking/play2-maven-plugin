@@ -22,7 +22,7 @@ under the License.
     <parent>
         <groupId>com.arpnetworking.build</groupId>
         <artifactId>arpnetworking-parent-pom</artifactId>
-        <version>3.2.4</version>
+        <version>3.4.2</version>
     </parent>
 
     <modelVersion>4.0.0</modelVersion>
@@ -82,6 +82,7 @@ under the License.
         <skipCheckstyle>true</skipCheckstyle>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <spotbugs.exclude>${project.basedir}/spotbugs.exclude.xml</spotbugs.exclude>
 
         <sbt-compiler.plugin.version>1.0.3</sbt-compiler.plugin.version>
     </properties>
@@ -129,6 +130,12 @@ under the License.
                     <artifactId>maven-compiler-plugin</artifactId>
                     <configuration>
                         <release>8</release>
+                        <showDeprecation>true</showDeprecation>
+                        <showWarnings>true</showWarnings>
+                        <compilerArgs>
+                            <arg>-Xlint:all</arg>
+                            <arg>-Xlint:-processing</arg>
+                        </compilerArgs>
                     </configuration>
                 </plugin>
 
@@ -225,7 +232,7 @@ under the License.
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-site-plugin</artifactId>
-                    <version>3.7.1</version>
+                    <version>3.21.0</version>
                     <configuration>
                         <attributes>
                             <assemblyPluginVersion>3.0.0</assemblyPluginVersion>
@@ -403,6 +410,11 @@ under the License.
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-enforcer-plugin</artifactId>
+                <configuration>
+                    <rules>
+                        <requireMavenVersion><version>3.9.6</version></requireMavenVersion>
+                    </rules>
+                </configuration>
             </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
