@@ -34,7 +34,7 @@ under the License.
 
     <properties>
         <play2.version>3.0.8</play2.version>
-        <twirl.version>2.0.8</twirl.version>
+        <twirl.version>2.0.9</twirl.version>
     </properties>
 
     <dependencies>
