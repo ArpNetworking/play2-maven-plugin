@@ -9,3 +9,12 @@ updates:
     directory: "/" # Location of package manifests
     schedule:
       interval: "daily"
+    ignore:
+      # Ignore dependency updates for old Play framework versions (2.3-2.8)
+      # These are maintained for compatibility with legacy applications
+      - dependency-name: "play2-providers/play2-provider-play23/*"
+      - dependency-name: "play2-providers/play2-provider-play24/*"
+      - dependency-name: "play2-providers/play2-provider-play25/*"
+      - dependency-name: "play2-providers/play2-provider-play26/*"
+      - dependency-name: "play2-providers/play2-provider-play27/*"
+      - dependency-name: "play2-providers/play2-provider-play28/*"
