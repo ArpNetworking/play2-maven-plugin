@@ -5,16 +5,47 @@
 
 version: 2
 updates:
-  - package-ecosystem: "maven" # See documentation for possible values
-    directory: "/" # Location of package manifests
+  # Root project
+  - package-ecosystem: "maven"
+    directory: "/"
     schedule:
       interval: "daily"
-    ignore:
-      # Ignore dependency updates for old Play framework versions (2.3-2.8)
-      # These are maintained for compatibility with legacy applications
-      - dependency-name: "play2-providers/play2-provider-play23/*"
-      - dependency-name: "play2-providers/play2-provider-play24/*"
-      - dependency-name: "play2-providers/play2-provider-play25/*"
-      - dependency-name: "play2-providers/play2-provider-play26/*"
-      - dependency-name: "play2-providers/play2-provider-play27/*"
-      - dependency-name: "play2-providers/play2-provider-play28/*"
+  
+  # Main plugin module
+  - package-ecosystem: "maven"
+    directory: "/play2-maven-plugin"
+    schedule:
+      interval: "daily"
+  
+  # Provider API
+  - package-ecosystem: "maven"
+    directory: "/play2-provider-api"
+    schedule:
+      interval: "daily"
+  
+  # Current Play provider (Play 3.0)
+  - package-ecosystem: "maven"
+    directory: "/play2-providers/play2-provider-play30"
+    schedule:
+      interval: "daily"
+  
+  # Source position mappers
+  - package-ecosystem: "maven"
+    directory: "/play2-source-position-mappers"
+    schedule:
+      interval: "daily"
+  
+  # Source watcher API
+  - package-ecosystem: "maven"
+    directory: "/play2-source-watcher-api"
+    schedule:
+      interval: "daily"
+  
+  # Source watchers
+  - package-ecosystem: "maven"
+    directory: "/play2-source-watchers"
+    schedule:
+      interval: "daily"
+  
+  # Legacy Play providers (2.3-2.8) are intentionally excluded
+  # These modules must remain compatible with their respective legacy Play versions
