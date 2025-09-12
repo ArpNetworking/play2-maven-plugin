@@ -61,7 +61,7 @@ under the License.
         <dependency>
             <groupId>io.ebean</groupId>
             <artifactId>ebean-agent</artifactId>
-            <version>13.17.3</version> <!-- version used by play-ebean 5.0.1 -->
+            <version>17.0.1</version> <!-- version used by play-ebean 5.0.1 -->
         </dependency>
 
         <dependency>
