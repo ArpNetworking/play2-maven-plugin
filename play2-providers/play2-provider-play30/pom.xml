@@ -41,7 +41,7 @@ under the License.
         <dependency>
             <groupId>com.google.javascript</groupId>
             <artifactId>closure-compiler</artifactId>
-            <version>v20140814</version>
+            <version>v20250820</version>
             <exclusions>
                 <exclusion>
                     <groupId>args4j</groupId>
